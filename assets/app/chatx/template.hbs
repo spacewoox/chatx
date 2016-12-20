@@ -1,0 +1,13 @@
+<div class='chat'>
+  <div class='messages'>
+  {{#each sortedMessageList as |item|}}
+    <p>
+      {{item.message}}
+    </p>
+  {{/each}}
+  </div>
+  <div class='inputs'>
+    {{textarea type="text" class='textarea' value=userInputs}}
+    <button {{action 'save'}}>submit</button>
+  </div>
+</div>
